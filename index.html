@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <main class="login" aria-labelledby="login-title">
+         <h2 id="login-title">Log In</h2>
+         <label for="email" class="visually-hidden">Email</label>
+         <input type="email" id="email" placeholder="Enter email..." autocomplete="off" aria-required="true">
+         <label for="password" class="visually-hidden">Password</label>
+         <input type="password" id="password" placeholder="Enter password..." autocomplete="off" aria-required="true">
+         <button id ="sign_in" aria-label="Sign in">Login</button>
+    </main>
+
+    <!-- Blog area for admin -->
+    <section class="my_blog" aria-labelledby="blog-title">
+          <header>
+             <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="" id="logout">Logout</a></li>
+                </ul>
+             </nav>
+          </header>
+
+          <div class="notifiy" role="alert" aria-live="polite"></div>
+          
+          <div class="container main">
+             <div class="main_content">
+                  <!-- Post form -->
+                  <section class="post_form" aria-labelledby="post-form-title">
+                    <h2 id="post-form-title">Create a New Post</h2>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Enter title" aria-required="true">
+                    <label for="post_content">Your Post</label>
+                    <textarea id="post_content" cols="30" rows="10" placeholder="Write your post here..." aria-required="true"></textarea>
+                    <button id="post_btn" class="post_btn" aria-label="Post now">Post Now</button>
+                    <button id="update_btn" class="update_btn" aria-label="Update post">Update Post</button>
+                 </section>
+
+                 <!-- Table of posts -->
+                 <section class="my_content" aria-labelledby="my-posts-title">
+                     <h2 id="my-posts-title">My Posts</h2>
+                     <table aria-label="List of posts">
+                         <!-- Table content here -->
+                     </table>
+                 </section>
+             </div>
+          </div>
+          
+          <footer>
+            <div class="footer_text">
+                <p class="footer-name">Gaurav Bisht</p> <!-- Added a class for styling -->
+                <div class="social">
+                    <a href="https://linkedin.com/in/gauravvbisht18" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                    <a href="https://github.com/gauravvbisht18" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_g.auravvv._/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/g_auravbisht18" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        
+    </section>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
