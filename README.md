@@ -33,7 +33,7 @@ This project is a blogging website built using HTML, CSS, JavaScript, and Fireba
 
 ## Live Demo
 
-You can view the live project at the following link: [Blogging Website Live Demo](https://github.com/gauravvbisht18/Blog.git)
+You can view the live project at the following link: [Blogging Website Live Demo](https://gauravvbisht18.github.io/Blog/)
 
 ## Getting Started
 
